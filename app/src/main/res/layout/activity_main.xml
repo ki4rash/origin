@@ -10,6 +10,7 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imgProfile"
 
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
@@ -20,6 +21,7 @@
 
         />
     <Button
+        android:id="@+id/btnProfile"
         android:background="#ffffff"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
@@ -28,6 +30,7 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/btnDial"
         android:background="#ffffff"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"

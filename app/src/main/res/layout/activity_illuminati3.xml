@@ -11,6 +11,7 @@
 
 
     <EditText
+        android:id="@+id/EdtTagName"
 
         android:textColorHint="#fffae2"
         android:hint="plz enter name tag"
@@ -21,6 +22,7 @@
         />
 
     <EditText
+        android:id="@+id/EdtTagFamily"
         android:textColorHint="#fffae2"
         android:hint="plz enter family tag"
         android:layout_marginTop="20dp"
@@ -30,6 +32,7 @@
         />
 
     <EditText
+        android:id="@+id/EtdTagage"
         android:textColorHint="#fffae2"
         android:hint="plz enter age tag"
         android:layout_marginTop="20dp"
@@ -39,6 +42,7 @@
         />
 
     <EditText
+        android:id="@+id/EdtTagPhonenumber"
         android:textColorHint="#fffae2"
         android:hint="plz enter phone number"
         android:layout_marginTop="20dp"
@@ -47,6 +51,7 @@
 
         />
     <EditText
+        android:id="@+id/EdtTagAddress"
         android:textColorHint="#fffae2"
         android:hint="plz enter address tag"
         android:layout_marginTop="20dp"
@@ -55,6 +60,7 @@
 
         />
     <Button
+        android:id="@+id/BtnReview"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
         android:background="#ffcc99"
