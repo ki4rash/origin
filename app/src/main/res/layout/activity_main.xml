@@ -6,15 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:background="@android:color/transparent"
-        android:layout_margin="20dp"
-        android:maxLength="14"
-        android:text="0098"
-        android:inputType="number"
-        android:hint="plz enter your phone  number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/y1"
+        />
 
 
 
