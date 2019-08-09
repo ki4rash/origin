@@ -34,6 +34,13 @@ public class illuminati3 extends AppCompatActivity {
                 String name4 = Edtphnumber.getText().toString();
                 String name5 = EdtAddress.getText().toString();
                 Intent intent = new Intent(illuminati3.this, illuminati4.class);
+                intent.putExtra(  "name1",name1);
+                intent.putExtra(  "name2",name2);
+                intent.putExtra(  "name3",name3);
+                intent.putExtra(  "name4",name4);
+                intent.putExtra(  "name5",name5);
+
+
                 startActivityForResult(intent, 180);
             }
         });
