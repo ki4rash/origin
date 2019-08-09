@@ -25,19 +25,19 @@ public class illuminati4 extends AppCompatActivity {
 
         Intent intent = getIntent();
         String name1 = intent.getStringExtra("message_id");
-        TxtName.setText
+        Txtfname.setText(name1);
 
         String name2= intent.getStringExtra("message_id");
-        TxtFamily
+        TxtFamily.setText(name2);
 
         String name3 = intent.getStringExtra("message_id");
-        TxtAge
+        TxtAge.setText(name3);
 
         String name4 = intent.getStringExtra("message_id");
-        TxtEntphonenumber
+        TxtEntphonenumber.setText(name4);
 
         String name5 = intent.getStringExtra("message_id");
-        TxtAddress
+        TxtAddress.setText(name5);
 
         Button btnEdit = (Button) findViewById(R.id.btnEdit);
         btnEdit.setOnClickListener(new View.OnClickListener()
