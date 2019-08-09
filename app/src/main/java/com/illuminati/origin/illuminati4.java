@@ -13,9 +13,9 @@ public class illuminati4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_illuminati4);
-        Button btnVerifyPhoneNumber = (Button) findViewById(R.id.btnEdit);
+        Button btnConfirm = (Button) findViewById(R.id.btnEdit);
 
-        btnVerifyPhoneNumber.setOnClickListener(new View.OnClickListener()
+        btnConfirm.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view) {
@@ -25,6 +25,7 @@ public class illuminati4 extends AppCompatActivity {
             }
 
         });
+
 
     }
 }
