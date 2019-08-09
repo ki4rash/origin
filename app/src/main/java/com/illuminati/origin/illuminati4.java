@@ -2,7 +2,10 @@ package com.illuminati.origin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class illuminati4 extends AppCompatActivity {
 
@@ -10,5 +13,18 @@ public class illuminati4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_illuminati4);
+        Button btnVerifyPhoneNumber = (Button) findViewById(R.id.btnEdit);
+
+        btnVerifyPhoneNumber.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(illuminati4.this, illuminati3.class);
+                startActivity(i);
+                finish();
+            }
+
+        });
+
     }
 }
