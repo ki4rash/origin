@@ -10,54 +10,56 @@ import android.widget.TextView;
 
 public class illuminati4 extends AppCompatActivity {
 
-    private TextView home1;
+
+    private TextView txt1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_illuminati4);
 
-        TextView Txtfname = (TextView) findViewById(R.id.TxtName);
-        TextView TxtFamily = (TextView) findViewById(R.id.TxtFamily);
-        TextView TxtAge = (TextView) findViewById(R.id.TxtAge);
-        TextView TxtEntphonenumber = (TextView) findViewById(R.id.TxtEntphonenumber);
-        TextView TxtAddress = (TextView) findViewById(R.id.TxtAddress);
+        TextView Txtname = (TextView) findViewById(R.id.Txtfirstname_4);
+        TextView Txtfamily = (TextView) findViewById(R.id.TxtSecond_4);
+        TextView TxtAge = (TextView) findViewById(R.id.Txtage_4);
+        TextView TxtPhone = (TextView) findViewById(R.id.TxtPhoneNumber_4);
+        TextView TxtAddress = (TextView) findViewById(R.id.TxtAddress_4);
 
         Intent intent = getIntent();
-        String name1 = intent.getStringExtra("message_id");
-        Txtfname.setText(name1);
+        String name = intent.getStringExtra("name");
+        String family = intent.getStringExtra("family");
+        String age = intent.getStringExtra("age");
+        String phone = intent.getStringExtra("phone");
+        String address = intent.getStringExtra("address");
 
-        String name2= intent.getStringExtra("message_id");
-        TxtFamily.setText(name2);
 
-        String name3 = intent.getStringExtra("message_id");
-        TxtAge.setText(name3);
+        Txtname.setText(name);
+        Txtfamily.setText(family);
+        TxtAge.setText(age);
+        TxtPhone.setText(phone);
+        TxtAddress.setText(address);
 
-        String name4 = intent.getStringExtra("message_id");
-        TxtEntphonenumber.setText(name4);
 
-        String name5 = intent.getStringExtra("message_id");
-        TxtAddress.setText(name5);
+        Button btnVerifyPhoneNumber = (Button) findViewById(R.id.btnEdit_4);
 
-        Button btnEdit = (Button) findViewById(R.id.btnEdit);
-        btnEdit.setOnClickListener(new View.OnClickListener()
-        {
+        btnVerifyPhoneNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(illuminati4.this, illuminati3.class);
                 startActivity(i);
                 finish();
             }
-
         });
 
-        Button btnConfirm = (Button) findViewById(R.id.btnConfirm);
+        Button btnConfirm = (Button) findViewById(R.id.btnConfirm_4);
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-
             }
+
+            // PreferenceManager.getDefaultSharedPreferences(this).edit()
+//                .putString("username", username).apply();
+
         });
 
 

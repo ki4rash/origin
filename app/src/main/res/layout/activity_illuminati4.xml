@@ -1,141 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:background=" #808b96 "
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#9e9e9e"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".illuminati4">
 
-    <LinearLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:textColor=" #81d4fa "
-        android:textSize="23sp"
-        android:text="Name:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/TxtName"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_marginTop="10dp"
-
             android:layout_marginLeft="10dp"
-            android:textColor=" #81d4fa "
-            android:textSize="23sp"
-            android:text="Family:"
+            android:layout_marginTop="10dp"
+            android:text="NAME:"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/TxtFamily"
-            android:layout_marginTop="10dp"
+            android:id="@+id/Txtfirstname_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
-            android:textColor=" #81d4fa "
-            android:textSize="23sp"
-            android:text="Age:"
+            android:layout_marginTop="10dp"
+            android:text="FAMILY:"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/TxtAge"
-            android:layout_marginTop="10dp"
+            android:id="@+id/TxtSecond_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
     </LinearLayout>
 
-    <LinearLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:textColor=" #81d4fa "
-            android:textSize="23sp"
-            android:text="Phone number:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/TxtEntphonenumber"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_marginTop="10dp"
+
             android:layout_marginLeft="10dp"
-            android:textColor=" #81d4fa "
-            android:textSize="23sp"
-            android:text="Address:"
+            android:layout_marginTop="10dp"
+            android:text="AGE:"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/TxtAddress"
-            android:layout_marginTop="10dp"
+            android:id="@+id/Txtage_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-
     </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="PHONE NUMBER:"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/TxtPhoneNumber_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="ADDRESS:"
+            android:textColor="#000"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/TxtAddress_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_marginTop="20dp"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
-            android:layout_marginRight="15dp"
-            android:background="#81d4fa"
-            android:id="@+id/btnConfirm"
+            android:id="@+id/btnConfirm_4"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Confirm" />
+            android:text="confirm" />
         <Button
-            android:layout_marginLeft="15dp"
-            android:background="#81d4fa"
-            android:id="@+id/btnEdit"
+            android:id="@+id/btnEdit_4"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Edit" />
-
+            android:text="edit" />
 
     </LinearLayout>
 
 
+
+
 </LinearLayout>
+

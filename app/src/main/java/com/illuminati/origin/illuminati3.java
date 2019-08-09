@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,33 +17,43 @@ public class illuminati3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_illuminati3);
-        Button btnVerifyPhoneNumber = (Button) findViewById(R.id.BtnReview);
+        Button btnVerifyPhoneNumber = (Button) findViewById(R.id.BtnReview_3);
 
-
-        final EditText EdtFname = (EditText)  findViewById(R.id.EdtTagName);
-        final EditText EdtFamily = (EditText)  findViewById(R.id.EdtTagFamily);
-        final EditText EdtAge = (EditText)  findViewById(R.id.EtdTagage);
-        final EditText Edtphnumber = (EditText)  findViewById(R.id.EdtTagPhonenumber);
-        final EditText EdtAddress = (EditText)  findViewById(R.id.EdtTagAddress);
+        final EditText EdtName = (EditText) findViewById(R.id.EdtName_3);
+        final EditText EdtFamily = (EditText) findViewById(R.id.EdtFamily_3);
+        final EditText EdtAge = (EditText) findViewById(R.id.EdtAge_3);
+        final EditText EdtPHONE = (EditText) findViewById(R.id.EdtPhone_3);
+        final EditText EdtAddress = (EditText) findViewById(R.id.EdtAddress_3);
 
         btnVerifyPhoneNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name1 = EdtFname.getText().toString();
-                String name2 = EdtFamily.getText().toString();
-                String name3 = EdtAge.getText().toString();
-                String name4 = Edtphnumber.getText().toString();
-                String name5 = EdtAddress.getText().toString();
+                String name = EdtName.getText().toString();
+                String family = EdtFamily.getText().toString();
+                String age= EdtAge.getText().toString();
+                String phone= EdtPHONE.getText().toString();
+                String address = EdtAddress.getText().toString();
+
                 Intent intent = new Intent(illuminati3.this, illuminati4.class);
-                intent.putExtra(  "name1",name1);
-                intent.putExtra(  "name2",name2);
-                intent.putExtra(  "name3",name3);
-                intent.putExtra(  "name4",name4);
-                intent.putExtra(  "name5",name5);
+                intent.putExtra("name",name);
+                intent.putExtra("family",family);
+                intent.putExtra("age",age);
+                intent.putExtra("phone",phone);
+                intent.putExtra("address",address);
 
 
-                startActivityForResult(intent, 180);
+                // String name = PreferenceManager.getDefaultSharedPreferences(ProfileActivity.this).getString("name" , "Unknown");
+
+
+                //  txtHello.setText( " Hello " + name);
+
+
+                startActivityForResult(intent, 150);
+
+
             }
         });
     }
+
+
 }

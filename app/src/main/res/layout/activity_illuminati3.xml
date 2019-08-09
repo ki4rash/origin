@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:background="#0180b5"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#64b5f6"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,66 +10,75 @@
 
 
     <EditText
-        android:id="@+id/EdtTagName"
-
-        android:textColorHint="#fffae2"
-        android:hint="plz enter name tag"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        />
+        android:id="@+id/EdtName_3"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:hint="please enter your name"
+        android:layout_marginTop="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/EdtTagFamily"
-        android:textColorHint="#fffae2"
-        android:hint="plz enter family tag"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/EdtFamily_3"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:hint="please enter your family"
+        android:layout_marginTop="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-        />
-
-    <EditText
-        android:id="@+id/EtdTagage"
-        android:textColorHint="#fffae2"
-        android:hint="plz enter age tag"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        />
 
     <EditText
-        android:id="@+id/EdtTagPhonenumber"
-        android:textColorHint="#fffae2"
-        android:hint="plz enter phone number"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/EdtAge_3"
+        android:maxLength="2"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:hint="please enter your age"
+        android:layout_marginTop="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-        />
+
+
+
     <EditText
-        android:id="@+id/EdtTagAddress"
-        android:textColorHint="#fffae2"
-        android:hint="plz enter address tag"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/EdtPhone_3"
+        android:textColor="#000"
+        android:layout_marginTop="17dp"
+        android:textColorHint="#000"
+        android:maxLength="11"
+        android:inputType="phone"
+        android:hint="please enter your phone number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-        />
+
+
+    <EditText
+        android:id="@+id/EdtAddress_3"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:hint="please enter your address"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
     <Button
-        android:id="@+id/BtnReview"
+        android:id="@+id/BtnReview_3"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
-        android:background="#ffcc99"
-        android:text="review"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp" />
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="review" />
+
     <TextView
-        android:id="@+id/Txtfield"
-        android:gravity="center_horizontal"
+        android:text="txthello"
+        android:id="@+id/savedata"
         android:layout_gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:textColor="#000" />
+
 </LinearLayout>
