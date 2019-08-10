@@ -8,16 +8,25 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class illuminati3 extends AppCompatActivity {
 
+
     private Button button_review;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_illuminati3);
         Button btnVerifyPhoneNumber = (Button) findViewById(R.id.BtnReview_3);
+
+
+
+
+
 
         final EditText EdtName = (EditText) findViewById(R.id.EdtName_3);
         final EditText EdtFamily = (EditText) findViewById(R.id.EdtFamily_3);
@@ -42,10 +51,8 @@ public class illuminati3 extends AppCompatActivity {
                 intent.putExtra("address",address);
 
 
-                // String name = PreferenceManager.getDefaultSharedPreferences(ProfileActivity.this).getString("name" , "Unknown");
 
 
-                //  txtHello.setText( " Hello " + name);
 
 
                 startActivityForResult(intent, 150);
