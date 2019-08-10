@@ -12,7 +12,7 @@
     <ImageView
         android:id="@+id/imgProfile"
 
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="150dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="200dp"
         android:layout_height="200dp"
